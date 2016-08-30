@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A236FCA-2792-41B4-A41A-333921560B35}</ProjectGuid>
+    <RootNamespace>TrainWorld</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Trams</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ShowProgress>NotSet</ShowProgress>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram11.cd" />
+    <None Include="ClassDiagram12.cd" />
+    <None Include="ClassDiagram13.cd" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\ToolbarCntr256.bmp" />
+    <None Include="res\ToolbarEdit256.bmp" />
+    <None Include="res\ToolbarRun256.bmp" />
+    <None Include="res\TrainWorld.ico" />
+    <None Include="res\TrainWorld.rc2" />
+    <None Include="res\TrainWorldDoc.ico" />
+    <None Include="res\TrainWorldNew.ico" />
+    <None Include="res\Tram_2S.ico" />
+    <None Include="res\Tram_3S.ico" />
+    <None Include="res\Tram_3Z.ico" />
+    <None Include="res\Tram_3ZS.ico" />
+    <None Include="res\Tram_KRK.ico" />
+    <None Include="res\Tram_P5.ico" />
+    <None Include="TrainWorld.reg" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BgrBmp.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="dibapi.h" />
+    <ClInclude Include="DrawTmpObject.h" />
+    <ClInclude Include="EditStop.h" />
+    <ClInclude Include="EnterID.h" />
+    <ClInclude Include="FindStop.h" />
+    <ClInclude Include="FlyByText.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Names.h" />
+    <ClInclude Include="RailEdit.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RoutesRec.h" />
+    <ClInclude Include="SelTram.h" />
+    <ClInclude Include="SemControl.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StdTrainDef.h" />
+    <ClInclude Include="SwitchControl.h" />
+    <ClInclude Include="SystemSettings.h" />
+    <ClInclude Include="SystemValues.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TrainObjects.h" />
+    <ClInclude Include="TrainWorld.h" />
+    <ClInclude Include="TrainWorldDoc.h" />
+    <ClInclude Include="TrainWorldView.h" />
+    <ClInclude Include="TramsContr.h" />
+    <ClInclude Include="ViewContr.h" />
+    <ClInclude Include="WinTextPop.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BgrBmp.cpp" />
+    <ClCompile Include="ComputeGA.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="DebugGraphics.cpp" />
+    <ClCompile Include="dibapi.cpp" />
+    <ClCompile Include="DibInterface.cpp" />
+    <ClCompile Include="DrawTmpObject.cpp" />
+    <ClCompile Include="EditStop.cpp" />
+    <ClCompile Include="EnterID.cpp" />
+    <ClCompile Include="FindStop.cpp" />
+    <ClCompile Include="FlyByText.cpp" />
+    <ClCompile Include="Fundation.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="ImageMgr.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Names.cpp" />
+    <ClCompile Include="RailEdit.cpp" />
+    <ClCompile Include="RoutesRec.cpp" />
+    <ClCompile Include="SelTram.cpp" />
+    <ClCompile Include="SemControl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SwitchControl.cpp" />
+    <ClCompile Include="SystemSettings.cpp" />
+    <ClCompile Include="TrainObjects.cpp" />
+    <ClCompile Include="TrainObjectsCol.cpp" />
+    <ClCompile Include="TrainObjectsRails.cpp" />
+    <ClCompile Include="TrainObjectsTrains.cpp" />
+    <ClCompile Include="TrainWorld.cpp" />
+    <ClCompile Include="TrainWorldDoc.cpp" />
+    <ClCompile Include="TrainWorldView.cpp" />
+    <ClCompile Include="TramsContr.cpp" />
+    <ClCompile Include="ViewContr.cpp" />
+    <ClCompile Include="WinTextPop.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TrainWorld.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TrainWorld.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
