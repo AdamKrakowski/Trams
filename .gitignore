@@ -2,3 +2,7 @@ ipch/
 Release/
 TrainWorld/Release/
 *.TMK
+*.suo
+*.sdf
+!KrkNG_152
+
